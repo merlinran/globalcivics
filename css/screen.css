@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'MyUnderwood';
-	src: url('/fonts/MyUnderwood.eot');
-	src: local('☺'), url('/fonts/MyUnderwood.woff') format('woff'), url('/fonts/MyUnderwood.ttf') format('truetype'), url('/fonts/MyUnderwood.svg') format('svg');
+	src: url('fonts/MyUnderwood.eot');
+	src: local('☺'), url('fonts/MyUnderwood.woff') format('woff'), url('fonts/MyUnderwood.ttf') format('truetype'), url('fonts/MyUnderwood.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
