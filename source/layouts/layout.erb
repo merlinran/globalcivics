@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+      <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+        <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= data.page.title || "全球公民意识" %></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+          <!-- Use title if it's in the page YAML frontmatter -->
+          <title><%= data.page.title || "全球公民意识" %></title>
+          <meta name="description" content="">
+          <meta name="viewport" content="width=device-width">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+          <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" href="css/screen.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr-2.6.1.min.js"></script>
-  </head>
-  <body>
-    <!--[if lt IE 7]>
-    <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-    <![endif]-->
-    <div id="main">
-      <ul id="mainNav">
-        <li><a href="#">首页</a></li>
-        <li><a href="#">全球公民意识</a></li>
-        <li><a href="#">记录片</a></li>
-        <li><a href="#">相关对话</a></li>
-        <li><a href="#">知识库</a></li>
-        <li><a href="#">联系</a></li>
-      </ul>
+          <link rel="stylesheet" href="css/screen.css">
+          <link rel="stylesheet" href="css/normalize.css">
+          <link rel="stylesheet" href="css/main.css">
+          <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+        </head>
+        <body>
+          <!--[if lt IE 7]>
+          <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+          <![endif]-->
+          <div id="main">
+            <ul id="mainNav">
+              <li><a href="/"><%= I18n.t(:home) %></a></li>
+              <li><a href="/intro.html"><%= I18n.t(:globalcivics) %></a></li>
+              <li><a href="#"><%= I18n.t(:documentary) %></a></li>
+              <li><a href="#"><%= I18n.t(:dialogues) %></a></li>
+              <li><a href="#"><%= I18n.t(:library) %></a></li>
+              <li><a href="#"><%= I18n.t(:contact) %></a></li>
+            </ul>
 
-      <%= yield %>
+            <%= yield %>
 
-    </div>
+          </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-      <script src="js/plugins.js"></script>
-      <script src="js/main.js"></script>
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+          <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+            <script src="js/plugins.js"></script>
+            <script src="js/main.js"></script>
 
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-      <script>
-        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-          g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-          s.parentNode.insertBefore(g,s)}(document,'script'));
-      </script>
-    </body>
-  </html>
+            <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+            <script>
+              var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+              (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+                g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g,s)}(document,'script'));
+            </script>
+          </body>
+        </html>
