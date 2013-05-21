@@ -40,7 +40,7 @@
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
-activate :i18n, mount_at_root: :zh_CN
+activate :i18n, mount_at_root: false
 
 # Methods defined in the helpers block are available in templates
 # helpers do
