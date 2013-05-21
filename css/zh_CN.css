@@ -1,0 +1,8 @@
+body#zh_CN {
+  font-family: "楷体", arial, sans-serif;
+}
+
+#mainNav a {
+  padding:0 1.6rem;
+  font-size:2rem;
+}
